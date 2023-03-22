@@ -1,0 +1,65 @@
+[
+    {
+        "restuarantIamge": "images/res1.webp",
+        "name": "Bawarchi",
+        "themeLine": "Special Biryani,indian,chines&North Indian",
+        "ratings": 2.5,
+        "code": "r_01"
+    },
+    {
+        "restuarantIamge": "images/res2.webp",
+        "name": "MVS Biryani Point",
+        "themeLine": "Biryani,chinese,Indian & Fast food",
+        "ratings": 3,
+        "code": "r_02"
+    },
+    {
+        "restuarantIamge": "images/res3.webp",
+        "name": "MVS Biryani Point",
+        "themeLine": "Biryani,chinese,Indian & Fast food",
+        "ratings": 3.5,
+        "code": "r_03"
+    },
+    {
+        "restuarantIamge": "images/res4.webp",
+        "name": "Shiva Dhaba",
+        "themeLine": "Indian, Non-veg & all type of foods",
+        "ratings": 4,
+        "code": "r_04"
+    },
+    {
+        "restuarantIamge": "images/res5.webp",
+        "name": "Burger King",
+        "themeLine": "American Fast Food",
+        "ratings": 4.5,
+        "code": "r_05"
+    },
+    {
+        "restuarantIamge": "images/res6.webp",
+        "name": "Bombay Juice",
+        "themeLine": "Chat, chinese, Juice",
+        "ratings": 3.5,
+        "code": "r_06"
+    },
+    {
+        "restuarantIamge": "images/res7.webp",
+        "name": "Mandi King",
+        "themeLine": "mandi, Tandoori, Arabian, North Indian",
+        "ratings": 2.5,
+        "code": "r_07"
+    },
+    {
+        "restuarantIamge": "images/res8.webp",
+        "name": "Cream Stone",
+        "themeLine": "Biryani,chinese,Indian & Fast food",
+        "ratings": 2,
+        "code": "r_08"
+    },
+    {
+        "restuarantIamge": "images/res9.webp",
+        "name": "Pizza Hut",
+        "themeLine": "Various types of pizzas",
+        "ratings": 3,
+        "code": "r_09"
+    }
+]

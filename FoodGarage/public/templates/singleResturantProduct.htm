@@ -1,0 +1,212 @@
+
+<div class="_2p-Tc">
+  <span>
+    <a href="#" data-url="/" class="kpkwa">
+      <span class="_3duMr" onclick="loadTemplate('exploreFood')">Home</span>
+    </a>
+    <meta itemprop="position" content="1">
+  </span>
+  <span class="_1yRfx"></span>
+  <span itemscope itemtype="#" itemprop="itemListElement">
+    <a href="#" itemprop="item" data-url="/" class="kpkwa">
+      <span itemprop="name" class="_3duMr">Bhubaneswar</span>
+    </a>
+    <meta itemprop="position" content="2">
+  </span>
+  <span class="_1yRfx"></span>
+  <span class="kpkwa" id="rest_name">{{name}}</span>
+</div>
+
+
+<section class="banner_wrapper d-flex align-items-center mb-5">
+    <div class="container m-auto my-2 p-4">
+      <div class="d-flex align-items-center justify-content-evenly ">
+        <div class="restro_img_cont col-lg-3">
+          <img class="restro_img"
+            src="{{restuarantIamge}}"
+            alt="food photo">
+        </div>
+
+        <div class="ps-lg-5 ps-sm-2 col-lg-6 col-sm-4">
+          <div class="restro_info">
+            <h2 class="name">{{name}}</h2>
+            <p class="theme">{{themeLine}}</p>
+            <!-- <p class="mb-2">Abids Road, Koti</p> -->
+          </div>
+          <div class="restro-rating-dtime-cost d-flex">
+            <div class="restro_rating border-end pe-4 me-3">
+              <div>
+                <i class="fas fa-star"></i>
+                <span>{{rating}}</span>
+              </div>
+              <div>{{total_rating}}</div>
+            </div>
+
+            <div class="restro_dtime border-end pe-4 ps-2 me-3">
+              <div>{{delivery_time}} </div>
+              <div>Delivery Time</div>
+            </div>
+
+            <div class="restro_rating pe-4 ps-2 me-3">
+              <div>
+                <i class="fas fa-rupee-sign"></i>
+                <span>{{price}}</span>
+              </div>
+              <div>{{total_person}}</div>
+            </div>
+          </div>
+          <div class="search_favourite_container ">
+            <div class="d-flex">
+              <div class="search_container d-flex align-items-center bg-white p-2 m-2 ms-0 shadow-sm">
+                <i class="fas fa-search p-2 pe-3 text-black-50 "></i>
+                <input type="text" class="border-0 form-range" name="dish-search" placeholder="search for Dishes....">
+              </div>
+      
+              <div class="checkbox_container d-flex align-items-center bg-white p-2 m-2 shadow-sm text-dark">
+                <input type="checkbox" name="veg-nonveg">
+                <label class="px-2" foter="veg-nonveg">Veg-only</label>
+              </div>
+              <div class="checkbox_container d-flex align-items-center bg-white p-2 m-2 shadow-sm">
+                <button class="btn border-0"> <i class="far fa-heart"></i> Favourite </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="restro_offer col-lg-3">
+          <div class="border border-1 border-light position-relative">
+            <span class="offerStyle d-inline-block">OFFER</span>
+            <div class="d-flex ">
+              <i class="fas fa-certificate icon"></i>
+              <div>{{discount}}% off up to ₹100 | Use code {{d_code}}</div>
+            </div>
+            <div class="d-flex ">
+              <i class="fas fa-certificate icon"></i>
+              <div>10% off up to ₹100 on orders above ₹400 + Up to ₹100</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section>
+    <main class="container d-flex">
+      <div class="col-md-3 ">
+        <div class="card-one ">
+            <div style="color: orange;">Recommended</div>
+            <div>New Launches</div>
+            <div>{{sidebar1}}</div>
+            <div>{{sidebar2}}</div>
+            <!-- <div>Main Course </div>
+            <div>Chinese</div>
+            <div>Soups</div>
+            <div>Desserts</div>
+            <div>Beverages</div> -->
+        </div>
+      </div>
+      <div class="col-md-6 card-two">
+        <recommended>
+          <h4>Reccommended</h4>
+          <div><span>18 Items</span></div>
+          <fooditem class="d-flex justify-content-between py-4 border-bottom border-2 mb-2">
+            <div>
+              <div class="symbolVegOrNot"><i dataVeg = "{{dataVeg1}}" class="fas fa-circle "></i></div>
+              <h5>{{foodName1}}</h5>
+              <p>
+                <i class="fas fa-rupee-sign"></i> {{foodPrice1}} | {{discount}} % Use {{d_code}}
+              </p>
+            </div>
+            <div class="position-relative">
+              <div class="food_img">
+                <img src="{{foodImage1}}" class="img-fluid rounded-3 w-75">
+              </div>
+              <button class="btn btn-sm  p-1 px-4 add-btn ">ADD</button>
+            </div>
+          </fooditem>
+        </recommended>
+        <menulist>
+          <fooditem class="d-flex justify-content-between py-4 border-bottom border-2 mb-2">
+            <div>
+              <div class="symbolVegOrNot"><i dataVeg = "{{dataVeg2}}" class="fas fa-circle"></i></div>
+              <h5>{{foodName2}}</h5>
+              <p>
+                <i class="fas fa-rupee-sign"></i> {{foodPrice2}} | {{discount}} % Use {{d_code}}
+              </p>
+            </div>
+            <div class="position-relative">
+              <div class="food_img">
+                <img src="{{foodImage2}}" class="img-fluid rounded-3 w-75">
+              </div>
+              <button class="btn btn-sm  p-1 px-4 add-btn ">ADD</button>
+            </div>
+          </fooditem>
+
+          <fooditem class="d-flex justify-content-between py-4 border-bottom border-2 mb-2">
+            <div >
+              <div class="symbolVegOrNot"><i dataVeg = "{{dataVeg2}}" class="fas fa-circle"></i></div>
+              <h5>{{foodName3}}</h5>
+              <p>
+                <i class="fas fa-rupee-sign"></i> {{foodPrice3}} | {{discount}} % Use {{d_code}}
+              </p>
+            </div>
+            <div class="position-relative">
+              <div class="food_img">
+                <img src="{{foodImage3}}" class="img-fluid rounded-3 w-75">
+              </div>
+              <button class="btn btn-sm  p-1 px-4 add-btn ">ADD</button>
+            </div>
+          </fooditem>
+
+          <fooditem class="d-flex justify-content-between py-4 border-bottom border-2 mb-2">
+            <div>
+              <div class="symbolVegOrNot"><i dataVeg = "{{dataVeg1}}" class="fas fa-circle"></i></div>
+              <h5>{{foodName4}}</h5>
+              <p>
+                <i class="fas fa-rupee-sign"></i> {{foodPrice4}} | {{discount}} % Use {{d_code}}
+              </p>
+            </div>
+            <div class="position-relative">
+              <div class="food_img">
+                <img src="{{foodImage4}}" class="img-fluid rounded-3 w-75">
+              </div>
+              <button class="btn btn-sm  p-1 px-4 add-btn ">ADD</button>
+            </div>
+          </fooditem>
+
+        </menulist>
+      </div>
+      <div class="col-md-3 card-three">
+        <h3>Cart</h3>
+        <div>3 Items</div>
+        <div>
+          <div>bahar special</div>
+          <div>Biriyani Family Pack</div>
+          <div>Subtotal</div>
+        </div>
+        <button class="btn btn-lg btn-danger w-75">Check Out</button>
+
+      </div>
+    </main>
+  </section>
+
+
+<script type="text/javascript">
+  let bannerWrap = document.querySelector(".banner_wrapper");
+  let restroInfo = document.querySelector(".restro-rating-dtime-cost");
+  let searchBar = document.querySelector(".search_favourite_container");
+  searchBar.style.position = 'absolute';
+
+
+  window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+          bannerWrap.classList.add("squeezeHeight");
+          restroInfo.classList.add("d-none");
+          searchBar.style.position = 'static';
+      } else {
+          searchBar.style.position = 'absolute';
+          bannerWrap.classList.remove("squeezeHeight");
+          restroInfo.classList.remove("d-none");
+      }
+  }
+</script>

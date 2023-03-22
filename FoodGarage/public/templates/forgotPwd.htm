@@ -1,0 +1,42 @@
+<form>
+    <div class="h1 mb-4">RESET PASSWORD</div>
+    <!-- before authentication -->
+    <beforeAuthentication class="d-none">
+
+        <div class="mb-3 width-370px">
+            <label for="userEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="userEmail">
+        </div>
+        <div class="mb-3 width-370px  ">
+            <label for="userOTP" class="form-label">Enter OTP</label>
+            <input type="number" class="form-control" id="userOTP" maxlength="6">
+        </div>
+        <div class="d-grid gap-2 mt-4 d-none">
+            <button class="btn  fw-bold btn btn-outline-dark text-light border" type="button">GET OTP</button>
+        </div>
+
+        <verifyOTP class="">
+            <div class="d-grid gap-2 mt-4">
+                <button class="btn  fw-bold btn btn-outline-dark text-light border" type="button">VERIFY OTP</button>
+            </div>
+        </verifyOTP>
+
+    </beforeAuthentication>
+
+    <!-- after authentication -->
+    <afterAuthentication class="">
+
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">New Password</label>
+            <input type="password" class="form-control" id="userPassword">
+        </div>
+        <div class="mb-3">
+            <label for="userConfirmPassword" class="form-label">Confirm New Password</label>
+            <input type="password" class="form-control" id="userConfirmPassword">
+        </div>
+        <div class="d-grid gap-2 mt-4">
+            <button onclick="loadTemplate('login')" class="btn  fw-bold btn btn-outline-dark text-light border" type="button">LOGIN</button>
+        </div>
+
+    </afterAuthentication>
+</form>

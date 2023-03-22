@@ -1,0 +1,26 @@
+<form>
+    <div class="h1 mb-4">LOGIN</div>
+    <div class="mb-3 width-370px">
+        <label for="userEmail" class="form-label">User Account Id</label>
+        <input type="text" class="form-control" id="userAccountId">
+    </div>
+    <div class="mb-3">
+        <label for="userPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="userPassword">
+    </div>
+    <div class="mb-3 text-center" id="loginError">
+        Invalid User credentials !!
+    </div>
+    <div class="mb-3 text-center">
+        <span><a href="#forgotPwd" onclick="loadTemplate('forgotPwd')" class="text-light">Forgot Password ?</a></span>
+    </div>
+    <div class="d-grid gap-2 mt-4">
+        <button class="btn  fw-bold btn btn-outline-dark text-light border" type="button" onclick="validateCustomer()">Login</button>
+    </div>
+    <div class="mb-3 text-center mt-3 ">
+        <div id="emailHelp" class="form-text text-center">Don't have an account ?</div>
+        <div class="mt-2"><a href="#" class="text-light text-decoration-none fw-bold"
+            onclick="loadTemplate('newSignUp')">CREATE ACCOUNT 
+            <i class="fa-solid fa-arrow-right-to-bracket"></i></a></div>
+    </div>
+</form>
